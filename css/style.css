@@ -30,3 +30,25 @@
 .h-40vh{
     height: 40vh;
 }
+
+.nav-link {
+    position: relative;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(224, 134, 16);
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
